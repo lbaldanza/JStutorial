@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    --mdc-theme-primary: teal;
+}
+.mdc-top-app-bar {
+    position: relative;
+}
+
+.my-card {
+    height: 150px;
+    width: 200px;
+    margin: 20px;
+    
+  }
+
+.demo-card__title  {
+    text-align: center;
+    margin: 20px;
+    visibility: visible;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    text-decoration: inherit;
+    text-transform: inherit;
+
+}
+
+.demo-card__subhead {
+text-align: center;
+visibility: visible;
+box-sizing: border-box;
+font-family: Roboto, sans-serif;
+-webkit-font-smoothing: antialiased;
+font-size: .875rem;
+line-height: 1.25rem;
+font-weight: 400;
+letter-spacing: .0178571429em;
+text-decoration: inherit;
+text-transform: inherit;
+opacity: .6;
+}
+
+.mdc-card__actions{
+    align-self: flex-end;
+}

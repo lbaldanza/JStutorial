@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/global.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button id="menu" class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+        <span class="mdc-top-app-bar__title">Home</span>
+      </section>
+
+
+
+    </div>
+  </header>
+  <aside id="drawer" class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="./Counter/index.html" aria-current="page" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">add_circle_outline</i>
+          <span class="mdc-list-item__text">Counter</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <div class="mdc-drawer-scrim"></div>
+
+
+  <main>
+
+
+    <div class="mdc-card demo-card my-card">
+
+
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__title">The Counter</div>
+        <div class="demo-card__subhead">I Make calculations!</div>
+      </div>
+
+      <div class="mdc-card__actions">
+        <a class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded" href="./Counter/index.html">
+          <span class="mdc-button__label">Open</span>
+          <div class="mdc-button__ripple"></div>
+        </a>
+
+      </div>
+  </main>
+
+
+
+  <script src="./js/drawer.js"></script>
+
+
+</body>
+
+</html>

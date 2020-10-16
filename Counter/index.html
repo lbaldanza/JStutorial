@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CounterExample</title>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+   
+</head>
+
+<body>
+    
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button id="menu" class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+            <span class="mdc-top-app-bar__title">The Counter</span>
+          </section>
+
+    
+
+        </div>
+      </header>
+      <aside id="drawer" class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__content">
+          <nav class="mdc-list">
+            <a class="mdc-list-item mdc-list-item--activated" href="../index.html" aria-current="page" tabindex="0">
+              <span class="mdc-list-item__ripple"></span>
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+              <span class="mdc-list-item__text">Home</span>
+            </a>
+    
+        
+          </nav>
+        </div>
+      </aside>
+     
+    
+      <div class="mdc-drawer-scrim"></div>
+    <main style="padding: 20px;">
+
+        <p id="counter" class="mdc-typography--headline1">0</p>
+        <button id="increment" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Increment</span>
+            <div class="mdc-button__ripple"></div>
+        </button>
+        <button id="decrement" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Decrement</span>
+            <div class="mdc-button__ripple"></div>
+        </button>
+        <button id="reset" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Reset</span>
+            <div class="mdc-button__ripple"></div>
+        </button>
+
+    </main>
+    
+ <script src="./js/counter.js"></script>
+ <script src="../js/drawer.js"></script>
+
+</body>
+
+</html>
